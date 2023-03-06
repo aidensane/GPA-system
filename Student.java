@@ -4,21 +4,26 @@ public class Student {
     private String nameString;
     private ArrayList<String> subject;
     private ArrayList<Character> grade;
+
     public Student(String n) {
         nameString = n;
-        subject  = new ArrayList<String>();
+        subject = new ArrayList<String>();
         grade = new ArrayList<Character>();
     }
+
     public String getName() {
         return nameString;
     }
-    public void add(String s, Character g) {
+
+    public void add(String s, Character string) {
         subject.add(s);
-        grade.add(g);
+        grade.add(string);
     }
+
     public ArrayList<String> getSubjects() {
         return subject;
     }
+
     public double getGPA() {
         double totalPoint = 0.0;
         for (char g : grade) {
@@ -44,5 +49,8 @@ public class Student {
         }
         return totalPoint / grade.size();
     }
-    
+
+    public void add(String s, String string) {
+    }
+
 }
