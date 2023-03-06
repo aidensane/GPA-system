@@ -6,7 +6,10 @@ public class Driver {
         aiden.add("History", "B");
         aiden.add("Geography", "D");
         System.out.println(aiden.getName() + " has a GPA of " + aiden.getGPA());
-        
+        System.out.println("It is obtained " + " from these subjects:");
+        for (String str: aiden.getSubjects()) {
+            System.out.println(str);
+        }
 
     }
 }
